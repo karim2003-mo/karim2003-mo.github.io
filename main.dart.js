@@ -77851,7 +77851,7 @@ A.wD.prototype={
 U(a){return new A.rE(new A.Yu(this),null)}}
 A.Yu.prototype={
 $2(a,b){var s=null,r=b.b
-if(r>=900&&r<=1300)return this.a.c
+if(r>=750&&r<=1300)return this.a.c
 else return A.c2(s,B.q,s,s,s,s,s)},
 $S:470}
 A.Hs.prototype={
