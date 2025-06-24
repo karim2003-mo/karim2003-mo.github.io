@@ -22814,15 +22814,15 @@ _.w=_.r=$
 _.x=b
 _.y=null
 _.as=c
-_.at=d
+_.at=$
+_.ax=d
 _.c=_.a=null},
 agH:function agH(a){this.a=a},
 agF:function agF(){},
 agG:function agG(){},
 agM:function agM(a){this.a=a},
 agI:function agI(a){this.a=a},
-agJ:function agJ(a,b){this.a=a
-this.b=b},
+agJ:function agJ(a){this.a=a},
 agK:function agK(a,b){this.a=a
 this.b=b},
 agL:function agL(a,b){this.a=a
@@ -74908,7 +74908,7 @@ case 3:o=b
 A.cn(u.P)
 s=4
 return A.A(A.pX(A.d6(0,0,5),new A.agN(),t.P),$async$ia)
-case 4:j=q.at
+case 4:j=q.ax
 if(j.ae(p))A.cn("Participant already exists, skipping initialization.")
 else A.cn("Participant doesn't exist, skipping initialization.")
 n=j.h(0,p)
@@ -74937,7 +74937,7 @@ P(a){var s=null,r=A.bJ(a,s,t.w).w
 return A.apC(A.amw(B.PP),A.kn(A.U_(A.c([A.anQ(A.ET(new A.xF(this.x,B.Ii,!0,s),B.K,s,s,s,s,r.a.a*0.8))],t.F),B.b2,B.bP,B.cN),s,s))}}
 A.agH.prototype={
 $1(a){return this.Ss(a)},
-Ss(a){var s=0,r=A.E(t.H),q=this,p,o
+Ss(a){var s=0,r=A.E(t.H),q=this,p,o,n
 var $async$$1=A.F(function(b,c){if(b===1)return A.B(c,r)
 while(true)switch(s){case 0:p=q.a
 o=p.mS()
@@ -74945,15 +74945,19 @@ s=2
 return A.A(o,$async$$1)
 case 2:s=3
 return A.A(p.wU(),$async$$1)
-case 3:s=p.a.d?4:6
+case 3:n=p
+s=4
+return A.A($.aiO().CK(p.d,null),$async$$1)
+case 4:n.at=c
+s=p.a.d?5:7
 break
-case 4:s=7
+case 5:s=8
 return A.A(p.pm(),$async$$1)
-case 7:s=5
+case 8:s=6
 break
-case 6:s=8
+case 7:s=9
 return A.A(p.ia(),$async$$1)
-case 8:case 5:return A.C(null,r)}})
+case 9:case 6:return A.C(null,r)}})
 return A.D($async$$1,r)},
 $S:488}
 A.agF.prototype={
@@ -74964,7 +74968,7 @@ $1(a){return a.c==="videoinput"},
 $S:184}
 A.agM.prototype={
 $1(a){return this.Su(a)},
-Su(a){var s=0,r=A.E(t.H),q=this,p,o,n,m,l,k,j,i,h
+Su(a){var s=0,r=A.E(t.H),q=this,p,o,n,m,l,k,j,i
 var $async$$1=A.F(function(b,c){if(b===1)return A.B(c,r)
 while(true)switch(s){case 0:A.cn(u.d+a.gkV().length)
 s=a.gkV().length!==0?2:3
@@ -74972,38 +74976,37 @@ break
 case 2:p=B.b.gam(B.b.gS(a.gkV()).b.b.a)
 A.cn(u.d+p)
 o=q.a
-s=4
-return A.A($.aiO().CK(o.d,null),$async$$1)
-case 4:n=c
+n=o.ax
 m=o.at
-m.m(0,p,n)
+m===$&&A.a()
+n.m(0,p,m)
 A.cn("listener has been added to pcMap")
+s=4
+return A.A(n.h(0,p).w1(),$async$$1)
+case 4:l=c
 s=5
-return A.A(m.h(0,p).w1(),$async$$1)
-case 5:l=c
+return A.A(n.h(0,p).pf(l),$async$$1)
+case 5:m=o.as
+k=o.r
+k===$&&A.a()
+j=A.aa(["sdp",l.a,"type",l.b],t.N,t.T)
+i=o.w
+i===$&&A.a()
+k=m.xO(i,p,j,k)
 s=6
-return A.A(m.h(0,p).pf(l),$async$$1)
-case 6:k=o.as
-j=o.r
-j===$&&A.a()
-i=A.aa(["sdp",l.a,"type",l.b],t.N,t.T)
-h=o.w
-h===$&&A.a()
-j=k.xO(h,p,i,j)
+return A.A(k,$async$$1)
+case 6:n.h(0,p).e=new A.agI(o)
+n=o.y
+k=A.V(n.FB(),!0,t.Lw)
+B.b.N(k,n.FZ())
+B.b.a7(k,new A.agJ(o))
 s=7
-return A.A(j,$async$$1)
-case 7:m.h(0,p).e=new A.agI(o)
-m=o.y
-j=A.V(m.FB(),!0,t.Lw)
-B.b.N(j,m.FZ())
-B.b.a7(j,new A.agJ(o,n))
+return A.A(m.ys(o.r,p),$async$$1)
+case 7:c.pj().fp(new A.agK(o,p))
+m=m.ta(o.r,p)
 s=8
-return A.A(k.ys(o.r,p),$async$$1)
-case 8:c.pj().fp(new A.agK(o,p))
-k=k.ta(o.r,p)
-s=9
-return A.A(t.d.b(k)?k:A.dK(k,t.z),$async$$1)
-case 9:c.fp(new A.agL(o,p))
+return A.A(t.d.b(m)?m:A.dK(m,t.z),$async$$1)
+case 8:c.fp(new A.agL(o,p))
 case 3:return A.C(null,r)}})
 return A.D($async$$1,r)},
 $S:490}
@@ -75023,13 +75026,15 @@ case 2:return A.C(null,r)}})
 return A.D($async$$1,r)},
 $S:185}
 A.agJ.prototype={
-$1(a){var s=this.a.y
+$1(a){var s=this.a,r=s.at
+r===$&&A.a()
+s=s.y
 s.toString
-this.b.C6(a,s)},
+r.C6(a,s)},
 $S:492}
 A.agK.prototype={
 $1(a){var s,r,q,p,o,n,m,l,k,j="candidate"
-for(s=a.gkV(),r=s.length,q=this.a.at,p=this.b,o=0;o<s.length;s.length===r||(0,A.K)(s),++o){n=s[o].zb()
+for(s=a.gkV(),r=s.length,q=this.a.ax,p=this.b,o=0;o<s.length;s.length===r||(0,A.K)(s),++o){n=s[o].zb()
 if(n.h(0,j)!=null){m=n.h(0,j)
 l=n.h(0,"sdpMid")
 k=n.h(0,"sdpMLineIndex")
@@ -75047,7 +75052,7 @@ case 4:o=J.ao(p)
 n=J.h8(o.h(p,"answer"),"sdp")
 o=J.h8(o.h(p,"answer"),"type")
 s=6
-return A.A(q.a.at.h(0,q.b).pg(new A.nT(n,o)),$async$$1)
+return A.A(q.a.ax.h(0,q.b).pg(new A.nT(n,o)),$async$$1)
 case 6:case 5:case 3:return A.C(null,r)}})
 return A.D($async$$1,r)},
 $S:160}
@@ -75069,7 +75074,7 @@ return A.D($async$$1,r)},
 $S:185}
 A.agP.prototype={
 $1(a){var s,r,q,p,o,n,m,l,k,j="candidate"
-for(s=a.gkV(),r=s.length,q=this.a.at,p=this.b,o=0;o<s.length;s.length===r||(0,A.K)(s),++o){n=s[o].zb()
+for(s=a.gkV(),r=s.length,q=this.a.ax,p=this.b,o=0;o<s.length;s.length===r||(0,A.K)(s),++o){n=s[o].zb()
 if(n.h(0,j)!=null){m=n.h(0,j)
 l=n.h(0,"sdpMid")
 k=n.h(0,"sdpMLineIndex")
